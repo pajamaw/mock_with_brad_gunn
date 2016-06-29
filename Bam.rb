@@ -4,7 +4,8 @@ def biggest_loss(stock_p)
   buy_date = nil
   sell_date = nil
   sell_price=nil
-    stock_p.with_index.reverse_each do |price, index|
+    stock_p.with_index.reverse_each do |price, index
+      |
         buy_price ||= price
         sell_price ||= price
         if buy_price > price
